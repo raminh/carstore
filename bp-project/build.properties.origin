@@ -1,5 +1,5 @@
 # path to your application server installation
-javaee.home=c:/Sun/SDK
+javaee.home=c:/Sun/SDK-
 
 
 # machine name (or the IP address) where the applications will be deployed.
