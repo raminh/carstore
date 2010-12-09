@@ -11,6 +11,7 @@ $Id: banner.jsp,v 1.28 2006/12/19 20:23:53 yutayoshida Exp $ --%>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/styles.css"></link>
 <script type="text/javascript" src="${pageContext.request.contextPath}/faces/static/META-INF/dojo/bpcatalog/dojo.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/faces/static/META-INF/rss/rssbar.js"></script>
+<script type="text/javascript" src="swfobject.js"></script>
 <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/faces/static/META-INF/rss/rssbar.css" />
 <style type="text/css">
 
@@ -49,27 +50,40 @@ $Id: banner.jsp,v 1.28 2006/12/19 20:23:53 yutayoshida Exp $ --%>
 
 <table border="0" bordercolor="gray" cellpadding="0" cellspacing="0" bgcolor="white" width="100%">
  <tr id="injectionPoint">
-  <td width="100"><a class="menuLink" href="${pageContext.request.contextPath}/faces/index.jsp""><img src="${pageContext.request.contextPath}/images/banner_logo.gif" border="0" width="70" height="70"></a></td>
-  <td align="left">
-   <div class="banner">Java Pet Store</div>
+  <td width="100%" valign="bottom"><a class="menuLink" href="${pageContext.request.contextPath}/faces/index.jsp""><span class="banner">Car Store</span></a></td>
+  <td>
   </td>
-  <td id="bannerRight" align="right">
-    <a class="menuLink" onmouseover="this.className='menuLinkHover';" onmouseout="this.className='menuLink';" href="${pageContext.request.contextPath}/faces/fileupload.jsp">Seller</a> <span class="menuItem">|</span>
+  <td align="left" width="100%">
+  <div id="FlashMenuLabs">
+        You need to upgrade your Flash Player or to allow javascript to enable Website menu.</br>
+        <a href="http://www.adobe.com/go/getflashplayer">Get Flash Player</a>            
+    </div>
+    <script type="text/javascript">
+    // <![CDATA[
+        var so = new SWFObject("menu.swf", "menu", "840", "140", "8", "#000000");
+        
+        so.addParam("wmode", "transparent");
+        so.addParam("scale", "noscale");
+        so.addParam("salign", "TL");    
+        so.write("FlashMenuLabs");
+    // ]]>
+    </script>
+   <!-- <a class="menuLink" onmouseover="this.className='menuLinkHover';" onmouseout="this.className='menuLink';" href="${pageContext.request.contextPath}/faces/fileupload.jsp">Seller</a> <span class="menuItem">|</span>
     <a class="menuLink" onmouseover="this.className='menuLinkHover';" onmouseout="this.className='menuLink';" href="${pageContext.request.contextPath}/faces/search.jsp">Search</a> <span class="menuItem">|</span>
     <a class="menuLink" onmouseover="this.className='menuLinkHover';" onmouseout="this.className='menuLink';" href="${pageContext.request.contextPath}/faces/catalog.jsp">Catalog</a> <span class="menuItem">|</span>
     <a class="menuLink" onmouseover="this.className='menuLinkHover';" onmouseout="this.className='menuLink';" href="${pageContext.request.contextPath}/faces/mapAll.jsp">Map</a> <span class="menuItem">|</span>
     <a class="menuLink" onmouseover="this.className='menuLinkHover';" onmouseout="this.className='menuLink';" href="${pageContext.request.contextPath}/faces/tag.jsp">Tags</a> <span class="menuItem">|</span>
     <a class="menuLink" onmouseover="this.className='menuLinkHover';" onmouseout="this.className='menuLink';" href="${pageContext.request.contextPath}/faces/index.jsp">Home</a>
-  </td>
+-->  </td>
   </tr>
  </tr>
-  <tr bgcolor="gray">
-  <td id="menubar" align="left" colspan="3" height="25" >
+  <tr bgcolor="#6699CC">
+  <td id="menubar" align="left" colspan="3" height="10" >
     <div id="rss-bar">
     <table border="0" cellpadding="0" cellspacing="0">
         <tr>
-        <td id="rss-channel" nowrap="true"></td>
-        <td id="rss-item" nowrap="true"></td>
+       <!-- <td id="rss-channel" nowrap="true"></td>
+        <td id="rss-item" nowrap="true"></td>-->
         </tr>
     </table>
     </div>

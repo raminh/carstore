@@ -142,6 +142,8 @@ $Id: fileupload.jsp,v 1.57 2007/03/08 21:58:48 inder Exp $ --%>
    
    function showFU() {
        document.getElementById("fucomponent").style.visibility = "visible";
+	   document.getElementById("fucomponent").style.left=100+"px";
+	   document.getElementById("fucomponent").style.Top=500+"px";
    }
    
    function switchPanes(fromDivId, toDivId) {
@@ -177,11 +179,11 @@ div.pane {
 
 </style>
     </head>
-    <body onload="showFU()">
+    <body onLoad="showFU()">
         <jsp:include page="banner.jsp"/>
-        <script>dojo.require("dojo.widget.Editor2");</script>        
-        <br/>
-        <div id="fucomponent" style="visibility:hidden;">
+        <script>dojo.require("dojo.widget.Editor2");</script>  
+		</br>     
+        <div id="fucomponent" style="visibility:hidden; position:relative;  z-index:-1;">
         <f:view>
     
             <ui:fileUploadTag id="TestFileuploadForm" serverLocationDir="#{FileUploadBean.uploadImageDirectory}" 
@@ -218,8 +220,8 @@ div.pane {
                         <h:outputText />
                         <h:graphicImage id="captchaImg" url="CaptchaServlet"/>
                         <h:inputText id="captcharesponse"></h:inputText>
-                        <br/><span class="button" onclick="switchPanes('pane2', 'pane1');">&lt;&lt; Previous</span>
-                        &nbsp;&nbsp;&nbsp;<span class="button" onclick="fileuploadOnsubmit()">Submit</span>
+                        <br/><span class="button" onClick="switchPanes('pane2', 'pane1');">&lt;&lt; Previous</span>
+                        &nbsp;&nbsp;&nbsp;<span class="button" onClick="fileuploadOnsubmit()">Submit</span>
                         <br/><div id="progress"></div><br/>
 
                     </h:panelGrid>
@@ -254,7 +256,7 @@ div.pane {
                         <h:outputText value="Custom Tag Keywords (separated by spaces)"/>
                         <h:inputText size="20" id="tags"></h:inputText>
                     </h:panelGrid>
-                    <br/><span class="button" onclick="switchPanes('pane1', 'pane2');">Next &gt;&gt;</span>
+                    <br/><span class="button" onClick="switchPanes('pane1', 'pane2');">Next &gt;&gt;</span>
                 </div>
                 Required fields are designated by a *
             </ui:fileUploadTag>        

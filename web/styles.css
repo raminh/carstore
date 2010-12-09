@@ -42,10 +42,14 @@
 }
 
 .banner {
-  height:35;
-  font-size:35;
+  height:50px;
+  font-size:50px;
   font-weight: bold;
-  font-family: Arial
+  font-family: Arial;
+  color:#0065CA;
+  vertical-align:bottom;
+  text-align:middle;
+  width:75%;
 }
 
 

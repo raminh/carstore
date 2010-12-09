@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<menu type="horizontal classic pro v 2.0">
+	<media_to_load lev0_left_path="" lev0_mid_normal_path="" lev0_mid_mouseover_path="" lev0_mid_selected_path="" lev0_right_path="" lev0_arrow_path="menu_data/arrow_root.swf" lev1_left_path="" lev1_top_path="menu_data/sub_t.png" lev1_mid_normal_path="menu_data/sub_n.gif" lev1_mid_mouseover_path="menu_data/sub_n.gif" lev1_mid_selected_path="menu_data/sub_n.gif" lev1_bottom_path="menu_data/sub_b.png" lev1_arrow_path="menu_data/arrow_sub.swf" search_button_path="menu_data/root_n.png" bg_path="menu_data/inv.gif" snd_level0_mouseover_path="menu_data/click16.mp3" snd_level1_mouseover_path="menu_data/click38.mp3" snd_click_path="" lev1_right_path=""/>
+	<menu_structure>
+		<item>
+			<item text="Home" url="index.jsp" icon="" open_window="_self" call_function_name="" call_function_parameter="" illustration_clip_path="menu_data/home.jpg" illustration_clip_pos_x="10" illustration_clip_pos_y="12" take_level_colorize_data="1"/>
+			<item text="Seller" url="fileupload.jsp" icon="" open_window="_self" call_function_name="" call_function_parameter="" illustration_clip_path="menu_data/seller.jpg" illustration_clip_pos_x="151" illustration_clip_pos_y="12" take_level_colorize_data="1"/>
+			<item text="Cars" url="catalog.jsp" icon="" open_window="_self" call_function_name="" call_function_parameter="" illustration_clip_path="menu_data/cars.jpg" illustration_clip_pos_x="293" illustration_clip_pos_y="12" take_level_colorize_data="1"/>
+			<item text="Tags" url="tag.jsp" icon="" open_window="_self" call_function_name="" call_function_parameter="" illustration_clip_path="menu_data/tags.jpg" illustration_clip_pos_x="426" illustration_clip_pos_y="12" take_level_colorize_data="1"/>
+			<item text="Maps" url="mapAll.jsp" icon="" open_window="_self" call_function_name="" call_function_parameter="" illustration_clip_path="menu_data/maps.jpg" illustration_clip_pos_x="570" illustration_clip_pos_y="12" take_level_colorize_data="1"/>
+			<item text="Search" url="search.jsp" icon="" open_window="_self" call_function_name="" call_function_parameter="" illustration_clip_path="menu_data/search.jpg" illustration_clip_pos_x="680" illustration_clip_pos_y="12" take_level_colorize_data="1"/>
+		</item>
+	</menu_structure>
+</menu>
