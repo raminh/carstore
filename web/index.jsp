@@ -33,7 +33,7 @@ try {
             }
         </script>
             <table bgcolor="white">
-                <tr>
+                <tr align="center">
                     <td valign="top">
                         <div class="outerbar" style="width: 200px">
                             
@@ -70,72 +70,29 @@ try {
                             
                         </div>
                     </td>
-                    <td valign="top" style="width: 400px">
-                        <div id="bodyCenter">
-                            <table valign="top" id="bodyTable" border="0">
+                    
+                    <td style="vertical-align:middle;">
+                        <div>
+                            <table>
                                 <tr>
-                                    <td>
-                                        <map name="petmap">
-                                            <area onmouseover="javascript:this.style.cursor='pointer';" onclick="browse('Birds')" 
-                                                  alt="Birds" 
-                                                  coords="72,2,280,250">
-                                            <area onmouseover="javascript:this.style.cursor='pointer';" onclick="browse('Fish')" 
-                                                  alt="Fish" 
-                                                  coords="2,180,72,250">
-                                            <area onmouseover="javascript:this.style.cursor='pointer';" onclick="browse('Dogs')" 
-                                                  alt="Dogs" 
-                                                  coords="60,250,130,320">
-                                            <area onmouseover="javascript:this.style.cursor='pointer';" onclick="browse('Reptiles')" 
-                                                  alt="Reptiles" 
-                                                  coords="140,270,210,340">
-                                            <area onmouseover="javascript:this.style.cursor='pointer';" onclick="browse('Cats')" 
-                                                  alt="Cats" 
-                                                  coords="225,240,295,310">
-                                            <area onmouseover="javascript:this.style.cursor='pointer';" onclick="browse('Birds')" 
-                                                  alt="Birds" 
-                                                  coords="280,180,350,250">
-                                        </map>
-                                        
-                                        <img src="${pageContext.request.contextPath}/images/splash.gif" 
-                                             alt="Pet Selection Map"
-                                             usemap="#petmap" 
-                                             width="350" 
-                                             height="355" 
-                                             border="0">
-                                    </td>
-                                </tr>
-                            </table>
-                            
-                        </div>
-                    </td>
-                    <td style="vertical-align:top;">
-                        <div style="border-style: double; width:100%;">
-                            <table border="0">
-                                <tr>
-                                    <th colspan="2" style="text-align:center">Most Popular Tags</th>
+                                   
+                                                        <div id="CarouselDiv">
+			<a href="http://www.adobe.com/go/getflashplayer">
+				<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+			</a>
+		</div>
                                 </tr>
                                 <tr>
-<%
-    String style=null;
-    int refx=0, ii=0;
-    for(Tag tag : tags) {
-        refx=tag.getRefCount() / 5;
-        if(refx >= 3) {
-            style="xxlarge";
-        } else if(refx == 2) {
-            style="xlarge";
-        } else if(refx == 1) {
-            style="large";
-        } else {
-            style="medium";
-        }
-
-        if((ii % 2) == 0) out.println("</tr>\n<tr>");
-        out.println("<td class='tagCell' style='text-align: center'><a href='./tag.jsp?tag=" + 
-            tag.getTag() + "'><span class='" + style +"'>" +  tag.getTag() + "</span></a></td>");
-        ii++;
-    }
-%>
+<script type="text/javascript" src="swfobject1.js"></script>
+		<script type="text/javascript">
+			var flashvars = {};
+			var params = {};
+			params.scale = "noscale";
+			params.salign = "tl";
+			params.wmode = "transparent";
+			var attributes = {};
+			swfobject.embedSWF("carousel.swf", "CarouselDiv", "900", "400", "9.0.0", false, flashvars, params, attributes);
+		</script>
                                 </tr>
                             </table>
                         </div>
@@ -155,6 +112,7 @@ try {
         <br/><br/>
         <jsp:include page="footer.jsp" />
         
+
     </body>
 </html>
 <%
