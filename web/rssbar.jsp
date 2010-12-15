@@ -11,9 +11,9 @@ $Id: rssbar.jsp,v 1.7 2006/05/06 01:44:59 yutayoshida Exp $ --%>
 
     
     <f:view>
-        <ui:rssBar url="https://blueprints.dev.java.net/servlets/ProjectRSS?type=news"
+        <ui:rssBar url="http://www.bmw.tv/core-services/rs/rss/feed/get/4/US"
                   itemCount="4"
-                  title="News from BluePrints"
+                  title=" News From BMW"
                   speed="6000"
                   backgroundImage="no"
                   color="#00ffff" hoverColor="#ff00ff"></ui:rssBar>

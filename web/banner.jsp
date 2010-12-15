@@ -45,7 +45,7 @@ $Id: banner.jsp,v 1.28 2006/12/19 20:23:53 yutayoshida Exp $ --%>
 </style>
 <script type="text/javascript">
     var rss = new bpui.RSS();
-    dojo.addOnLoad(function(){rss.getRssInJson('${pageContext.request.contextPath}/faces/dynamic/bpui_rssfeedhandler/getRssfeed', 'https://blueprints.dev.java.net/servlets/ProjectRSS?type=news', '4', '4000', 'News from BluePrints', 'news.jsp');});
+    dojo.addOnLoad(function(){rss.getRssInJson('${pageContext.request.contextPath}/faces/dynamic/bpui_rssfeedhandler/getRssfeed', 'http://www.bmw.tv/core-services/rs/rss/feed/get/4/US', '4', '4000', 'News From BMW', 'news.jsp');});
 </script>
 
 <table border="0" bordercolor="gray" cellpadding="0" cellspacing="0" bgcolor="white" width="100%">
@@ -82,8 +82,8 @@ $Id: banner.jsp,v 1.28 2006/12/19 20:23:53 yutayoshida Exp $ --%>
     <div id="rss-bar">
     <table border="0" cellpadding="0" cellspacing="0">
         <tr>
-       <!-- <td id="rss-channel" nowrap="true"></td>
-        <td id="rss-item" nowrap="true"></td>-->
+        <td id="rss-channel" nowrap="true"></td>
+        <td id="rss-item" nowrap="true"></td>
         </tr>
     </table>
     </div>
