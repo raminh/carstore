@@ -88,26 +88,27 @@ create table tag_item(
 );
 
 
-INSERT INTO category VALUES('CATS', 'Cats', 'Loving and finicky friends', 'cats_icon.gif');
-INSERT INTO category VALUES('DOGS', 'Dogs', 'Loving and furry friends', 'dogs_icon.gif');
-INSERT INTO category VALUES('BIRDS', 'Birds', 'Loving and feathery friends', 'birds_icon.gif');
-INSERT INTO category VALUES('REPTILES', 'Reptiles', 'Loving and scaly friends', 'reptiles_icon.gif');
-INSERT INTO category VALUES('FISH', 'Fish', 'Loving aquatic friends', 'fish_icon.gif');
+INSERT INTO category VALUES('FORD', 'FORDCARS', 'Loving and finicky friends', 'cats_icon.gif');
+INSERT INTO category VALUES('TOYOTA', 'TOYOTACARS', 'Loving and furry friends', 'dogs_icon.gif');
+INSERT INTO category VALUES('AUDI/BMW', 'AUDI/BMWCARS', 'Loving and feathery friends', 'birds_icon.gif');
+INSERT INTO category VALUES('JEEPS', 'JEEPCARS', 'Loving and scaly friends', 'reptiles_icon.gif');
+INSERT INTO category VALUES('MERCEDES', 'MERCEDESBENZ', 'Loving aquatic friends', 'fish_icon.gif');
 
-INSERT INTO product VALUES('feline01', 'CATS', 'Hairy Cat', 'Great for reducing mouse populations', 'cat1.gif');
-INSERT INTO product VALUES('feline02', 'CATS', 'Groomed Cat', 'Friendly house cat keeps you away from the vacuum', 'cat2.gif');
-INSERT INTO product VALUES('canine01', 'DOGS', 'Medium Dogs', 'Friendly dog from England', 'dog1.gif');
-INSERT INTO product VALUES('canine02', 'DOGS', 'Small Dogs', 'Great companion dog to sit on your lap','dog2.gif');
-INSERT INTO product VALUES('avian01', 'BIRDS', 'Parrot', 'Friend for a lifetime.', 'bird1.gif');
-INSERT INTO product VALUES('avian02', 'BIRDS', 'Exotic', 'Impress your friends with your colorful friend.','bird2.gif');
-INSERT INTO product VALUES('fish01', 'FISH', 'Small Fish', 'Fits nicely in a small aquarium.','fish2.gif');
-INSERT INTO product VALUES('fish02', 'FISH', 'Large Fish', 'Need a large aquarium.','fish3.gif');
-INSERT INTO product VALUES('reptile01', 'REPTILES', 'Slithering Reptiles', 'Slides across the floor.','lizard1.gif');
-INSERT INTO product VALUES('reptile02', 'REPTILES', 'Crawling Reptiles', 'Uses legs to move fast.','lizard2.gif');
+INSERT INTO product VALUES('feline01', 'FORD', 'ford sport', 'Great for reducing mouse populations', 'cat1.gif');
+INSERT INTO product VALUES('feline02', 'FORD', 'ford family', 'Friendly house cat keeps you away from the vacuum', 'cat2.gif');
+INSERT INTO product VALUES('canine01', 'TOYOTA', 'Toyota utility', 'Friendly dog from England', 'dog1.gif');
+INSERT INTO product VALUES('canine02', 'TOYOTA', 'Toyota sport', 'Great companion dog to sit on your lap','dog2.gif');
+INSERT INTO product VALUES('avian01', 'AUDI/BMW', 'AUDI', 'Friend for a lifetime.', 'bird1.gif');
+INSERT INTO product VALUES('avian02', 'AUDI/BMW', 'BMW', 'Impress your friends with your colorful friend.','bird2.gif');
+INSERT INTO product VALUES('fish01', 'MERCEDES', 'benz c class', 'Fits nicely in a small aquarium.','fish2.gif');
+INSERT INTO product VALUES('fish02', 'MERCEDES', 'benz sport', 'Need a large aquarium.','fish3.gif');
+INSERT INTO product VALUES('reptile01', 'JEEPS', 'jeep sport', 'Slides across the floor.','lizard1.gif');
+INSERT INTO product VALUES('reptile02', 'JEEPS', 'jeep utility', 'Uses legs to move fast.','lizard2.gif');
 
-INSERT INTO Address VALUES('1', 'W el Camino Real & Castro St', '', 'Mountain View','CA','94040',37.38574,-122.083973);
-INSERT INTO Address VALUES('2', 'Shell Blvd & Beach Park Blvd', '', 'Foster City','CA','94404',37.546935,-122.263978);
+
+--INSERT INTO Address VALUES('1', 'valhallavägan', '', 'Karlskrona','sweden','37141',56.181044,15.595773);
 INSERT INTO Address VALUES('3', 'River Oaks Pky & Village Center Dr', '', 'San Jose','CA','95134',37.398259,-121.922367);
+INSERT INTO Address VALUES('2','Galgamarken', '','Karlskrona', 'Sweden','37030',56.183101,15.601417);
 INSERT INTO Address VALUES('4', 'S 1st St & W Santa Clara St', '', 'San Jose','CA','95113',37.336141,-121.890666);
 INSERT INTO Address VALUES('5', '1st St & Market St ', '', 'San Francisco','CA','94105',37.791028,-122.399082);
 INSERT INTO Address VALUES('6', 'Paseo Padre Pky & Fremont Blvd', '', 'Fremont','CA','94555',37.575035,-122.041273);
@@ -207,6 +208,10 @@ INSERT INTO Address VALUES('99', 'Palm Dr & Arboretum Rd', '', 'Stanford','CA','
 INSERT INTO Address VALUES('100', 'Leavesley Rd & Monterey Rd', '', 'Gilroy','CA','95020',37.019447,-121.574953);
 INSERT INTO Address VALUES('101', 'Cesar Chavez St & Sanchez', '', 'San Francisco','CA','94131',37.74753,-122.428982);
 INSERT INTO Address VALUES('102', 'University Ave & Middlefield Rd', '', 'Palo Alto','CA','94301',37.450638,-122.156975);
+INSERT INTO Address VALUES('103', 'W elcome to Belkinge', '', 'Blekinge institute of tekniska','Sweden','37179',56.160816,15.586714);
+INSERT INTO Address VALUES('104', 'valhallavägan', '', 'Karlskrona','Sweden','37141',56.181044,15.595773);
+INSERT INTO Address VALUES('1', 'Annebo', '','Karlskrona', 'Sweden','37030',56.174864,15.596091);
+
 
 INSERT INTO SellerContactInfo VALUES('1', 'Brydon', 'Sean', 'abc@abc.xyz');
 INSERT INTO SellerContactInfo VALUES('2', 'Singh', 'Inderjeet', 'abc@abc.xyz');
