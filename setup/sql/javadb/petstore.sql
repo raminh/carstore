@@ -208,8 +208,8 @@ INSERT INTO Address VALUES('99', 'Palm Dr & Arboretum Rd', '', 'Stanford','CA','
 INSERT INTO Address VALUES('100', 'Leavesley Rd & Monterey Rd', '', 'Gilroy','CA','95020',37.019447,-121.574953);
 INSERT INTO Address VALUES('101', 'Cesar Chavez St & Sanchez', '', 'San Francisco','CA','94131',37.74753,-122.428982);
 INSERT INTO Address VALUES('102', 'University Ave & Middlefield Rd', '', 'Palo Alto','CA','94301',37.450638,-122.156975);
-INSERT INTO Address VALUES('103', 'W elcome to Belkinge', '', 'Blekinge institute of tekniska','Sweden','37179',56.160816,15.586714);
-INSERT INTO Address VALUES('104', 'valhallavägan', '', 'Karlskrona','Sweden','37141',56.181044,15.595773);
+--INSERT INTO Address VALUES('103', 'W elcome to Belkinge', '', 'Blekinge institute of tekniska','Sweden','37179',56.160816,15.586714);
+--INSERT INTO Address VALUES('104', 'valhallavägan', '', 'Karlskrona','Sweden','37141',56.181044,15.595773);
 INSERT INTO Address VALUES('1', 'Annebo', '','Karlskrona', 'Sweden','37030',56.174864,15.596091);
 
 
