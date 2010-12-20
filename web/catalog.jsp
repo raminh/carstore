@@ -20,7 +20,7 @@ $Id: catalog.jsp,v 1.22 2007/03/16 21:42:03 basler Exp $ --%>
         <tr>
             <td>
                 <table id="accordion">
-                    <tr id="accordionTitle" class="accordionTitle"><td>Pets</td></tr>
+                    <tr id="accordionTitle" class="accordionTitle"><td>Cars</td></tr>
                     <tr><td>
                             <table id="accordionBody" border="0" class="accordionBody">
                             </table>
@@ -34,7 +34,7 @@ $Id: catalog.jsp,v 1.22 2007/03/16 21:42:03 basler Exp $ --%>
                         <td id="bodySpace" border="0" align="center"></td>
                     </tr>
                     <tr id="targetRow">
-                        <td width="500" height="70 align="top">
+                        <td width="800" height="70 align="top">
                             <div class="nav" id="right_button">
                                 <img src="${pageContext.request.contextPath}/images/right.gif" name="nextRoll" title="Show More Items" border="0">
                             </div>
@@ -78,7 +78,7 @@ $Id: catalog.jsp,v 1.22 2007/03/16 21:42:03 basler Exp $ --%>
                     </tr>
                 </table>
             </td>
-            <td style="vertical-align:top; width:300px; text-align:right;">
+            <td style="vertical-align:top; width:500px; text-align:right;">
                 <div id="downloadAds">
                     <jsp:include page="download.jsp" />
                 </div>
