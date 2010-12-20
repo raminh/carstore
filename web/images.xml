@@ -10,12 +10,12 @@ target - _self - opens the url in the same browser page
 
 The tooltip text is recorded as CDATA. You can use HTML tags like "<br>"
 -->
-<Carousel centeredImage="images/logo.gif" url="http://www.flashxml.net" target="_blank">
-	<photo image="images/01.jpg" url="http://www.flashxml.net" target="_blank"><![CDATA[New Car <br> $5999]]></photo>
-	<photo image="images/02.jpg" url="http://www.flashxml.net" target="_blank"><![CDATA[Mercedes Benz<br> $4000]]></photo>
-	<photo image="images/03.jpg" url="http://www.flashxml.net" target="_blank"><![CDATA[Toyota Matrix<br> $3999]]></photo>
-	<photo image="images/04.jpg" url="http://www.flashxml.net" target="_blank"><![CDATA[Ford Escape<br> $4500 ]]></photo>
-	<photo image="images/05.jpg" url="http://www.flashxml.net" target="_blank"><![CDATA[Jeep Liberty<br> $5000]]></photo>
-	<photo image="images/06.jpg" url="http://www.flashxml.net" target="_blank"><![CDATA[Audi Q7<br> $2999]]></photo>
-	<photo image="images/07.jpg" url="http://www.flashxml.net" target="_blank"><![CDATA[Mercedes-Benz<br> $3500]]></photo>
+<Carousel centeredImage="images/logo.gif" url="http://localhost:8080/carstore/faces/index.jsp" target="_self">
+	<photo image="images/01.jpg" url="http://localhost:8080/carstore/faces/catalog.jsp?catid=FORD%20CARS#feline01,7" target="_self"><![CDATA[Ford Edge<br>A black car with premium<br> package]]></photo>
+	<photo image="images/02.jpg" url="http://localhost:8080/carstore/faces/catalog.jsp?catid=TOYOTA%20CARS#canine02,108" target="_self"><![CDATA[Toyota FJ Cruiser<br>A Good looking Yellow <br>Color Car]]></photo>
+	<photo image="images/03.jpg" url="http://localhost:8080/carstore/faces/catalog.jsp?catid=TOYOTA%20CARS#avian01,201" target="_self"><![CDATA[Audi A4<br>A luxurious car with automatic <br>transmission]]></photo>
+	<photo image="images/04.jpg" url="http://localhost:8080/carstore/faces/catalog.jsp?catid=TOYOTA%20CARS#avian02,204" target="_self"><![CDATA[BMW M3<br>A car with extraordinary <br>features]]></photo>
+	<photo image="images/05.jpg" url="http://localhost:8080/carstore/faces/catalog.jsp?catid=TOYOTA%20CARS#reptile01,407" target="_self"><![CDATA[Jeep Sport<br>This is a sports jeep <br>with blue exterior color]]></photo>
+	<photo image="images/06.jpg" url="http://localhost:8080/carstore/faces/catalog.jsp?catid=TOYOTA%20CARS#fish01,309" target="_self"><![CDATA[Mercedes-Benz SL500<br>A good looking silver <br>color car with Adjustable Suspension]]></photo>
+	<photo image="images/07.jpg" url="http://localhost:8080/carstore/faces/catalog.jsp?catid=TOYOTA%20CARS#fish02,303" target="_self"><![CDATA[Mercedes-Benz ML500<br>A big black color car <br>with 4D Sport Utility]]></photo>
 </Carousel>
