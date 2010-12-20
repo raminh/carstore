@@ -39,7 +39,7 @@ try {
                             
                             <div dojoType="FisheyeList"
                                  itemWidth="170" itemHeight="50"
-                                 itemMaxWidth="340" itemMaxHeight="100"
+                                 itemMaxWidth="340" itemMaxHeight="70"
                                  orientation="vertical"
                                  effectUnits="2"
                                  itemPadding="10"
@@ -47,23 +47,23 @@ try {
                                  labelEdge="bottom"
                                  enableCrappySvgSupport="false">
                                 
-                                <div dojoType="FisheyeListItem" onClick="browse('Dogs');" 
+                                <div dojoType="FisheyeListItem" onClick="browse('TOYOTA CARS');"
                                      iconsrc="${pageContext.request.contextPath}/images/dogs_icon.gif">
                                 </div>
                                 
-                                <div dojoType="FisheyeListItem" onClick="browse('Cats');"
+                                <div dojoType="FisheyeListItem" onClick="browse('FORD CARS');"
                                      iconsrc="${pageContext.request.contextPath}/images/cats_icon.gif">
                                 </div>
                                 
-                                <div dojoType="FisheyeListItem" onClick="browse('Birds');"
+                                <div dojoType="FisheyeListItem" onClick="browse('AUDI/BMW CARS');"
                                      iconsrc="${pageContext.request.contextPath}/images/birds_icon.gif">
                                 </div>
                                 
-                                <div dojoType="FisheyeListItem" onClick="browse('Fish');"
+                                <div dojoType="FisheyeListItem" onClick="browse('MERCEDES-BENZ');"
                                      iconsrc="${pageContext.request.contextPath}/images/fish_icon.gif">
                                 </div>
                                 
-                                <div dojoType="FisheyeListItem" onClick="browse('Reptiles');"
+                                <div dojoType="FisheyeListItem" onClick="browse('JEEP CARS');"
                                      iconsrc="${pageContext.request.contextPath}/images/reptiles_icon.gif">
                                 </div>
                             </div>
