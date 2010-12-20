@@ -20,7 +20,7 @@ try {
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-        <title>Java Pet Store Reference Application</title>
+        <title>Car Store</title>
         <link type="text/css" rel="stylesheet" href="./tag.css"/>
     </head>
     <body>
@@ -91,7 +91,7 @@ try {
 			params.salign = "tl";
 			params.wmode = "transparent";
 			var attributes = {};
-			swfobject.embedSWF("carousel.swf", "CarouselDiv", "900", "400", "9.0.0", false, flashvars, params, attributes);
+			swfobject.embedSWF("carousel.swf", "CarouselDiv", "900", "360", "9.0.0", false, flashvars, params, attributes);
 		</script>
                                 </tr>
                             </table>
