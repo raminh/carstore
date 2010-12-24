@@ -132,7 +132,31 @@ public class CatalogFacade implements ServletContextListener {
         em.close();
         return items;
     }
-    
+
+    /**
+     * Value List Handler for items. Uses the Java Persistence query language(Ramin)
+     * @param carType is the product Name that the item belongs to
+     * @param start position of the first result, numbered from 0
+     * @param chunkSize the maximum number of results to retrieve
+     * @returns a List of Item objects
+     */
+    @SuppressWarnings("unchecked")
+    public List<Item> getItemsByCarName(String carType, int start, int chunkSize){
+        EntityManager em = emf.createEntityManager();
+
+        System.out.println("carType>>>>>>"+carType);
+
+        String pattern = "'"+carType.toUpperCase()+"%'";
+        //make Java Persistence query
+        //Query query = em.createNamedQuery("Item.getItemsPerProductCategory");
+        Query query = em.createQuery("SELECT i FROM Item i WHERE i.name LIKE "+pattern+" AND i.disabled = 0");
+        List<Item>  items = query.setFirstResult(start).setMaxResults(chunkSize).getResultList();
+        em.close();
+         System.out.println("carType>>>>SIZE>>"+items.size());
+        return items;
+
+    }
+
     /**
      * Value List Handler for items. Found by item ID
      * @param IDs is an array of item ids for specific items that need to be returned

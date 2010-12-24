@@ -3,7 +3,7 @@ $Id: search.jsp,v 1.28 2006/12/04 21:34:10 basler Exp $ --%>
 
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@page import="java.util.*, com.sun.javaee.blueprints.petstore.search.*"%>
+<%@page import="java.util.*, com.sun.javaee.blueprints.petstore.search.*,com.sun.javaee.blueprints.petstore.model.CatalogFacade, com.sun.javaee.blueprints.petstore.model.Item"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <%@taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
 <%@taglib uri="http://java.sun.com/jsf/core" prefix="f" %>
@@ -191,9 +191,12 @@ $Id: search.jsp,v 1.28 2006/12/04 21:34:10 basler Exp $ --%>
                                     </th>
                                     <th class="itemCell">Name</th>
                                     <th class="itemCell">Description</th>
+                                    <!--
                                     <th class="itemCell">Tags</th>
+                                    -->
                                     <th class="itemCell">Price</th>
                                 </tr>
+                                <%--
 <%
 SearchBean searchBean=(SearchBean)session.getAttribute("SearchBean");
 if(searchBean != null) {
@@ -201,31 +204,49 @@ if(searchBean != null) {
     if(hits != null) {
         for(IndexDocument indexDoc : hits) {
 %>                    
+                                --%>
+<%
+    CatalogFacade cf = (CatalogFacade)config.getServletContext().getAttribute("CatalogFacade");
+    List<Item> items=cf.getItemsByCarName("TOYOTA",0, 90);
+    // since top 20 come from database or desending refCount order, need to reorder by tag name
+    /*
+    Collections.sort(items, new Comparator() {
+        public int compare(Object one, Object two) {
+             return ((items)one).getTag().compareTo(((items)two).getTag());
+        }
+    });
+    */
+    if(items != null)
+    {
+      for(Item indexDoc : items){
+%>
                                 <tr>
                                 <td class="itemCell">
-                                    <input type="checkbox" name="mapSelectedItems" value="<%= indexDoc.getUID() %>"/>                        
+                                    <input type="checkbox" name="mapSelectedItems" value="<%= indexDoc.getItemID() %>"/>
                                 </td>
                                 <td class="itemCell">
-                                    <a href="${pageContext.request.contextPath}/faces/catalog.jsp?pid=<%= indexDoc.getProduct() %>&itemId=<%= indexDoc.getUID() %>"
-                                       onmouseover="bpui.popup.show('pop1', event, '<%= indexDoc.getUID() %>')" onmouseout="bpui.popup.hide('pop1')">
-                                        <%= indexDoc.getTitle() %>
+                                    <a href="${pageContext.request.contextPath}/faces/catalog.jsp?pid=<%= indexDoc.getProductID() %>&itemId=<%= indexDoc.getItemID() %>"
+                                       onmouseover="bpui.popup.show('pop1', event, '<%= indexDoc.getItemID() %>')" onmouseout="bpui.popup.hide('pop1')">
+                                        <%= indexDoc.getName() %>
                                     </a>
                                 </td>
                                 <td class="itemCell">
-                                    <%= indexDoc.getSummary() %>
+                                    <%= indexDoc.getDescription() %>
                                 </td>
+                                <!--
                                 <td class="itemCell">
-                                <span id="ITEMID_TAGS_<%= indexDoc.getUID() %>"><%= (indexDoc.getTag().equals("") ? "&nbsp;" : indexDoc.getTag()) %></span>
-                                <br/><input type="button" value="Add Tags" onclick="addTags(event, '<%= indexDoc.getTitle() %>', '<%= indexDoc.getUID() %>')"/>
+                                <span id="ITEMID_TAGS_ <%--   <%= indexDoc.getUID() %>"><%= (indexDoc.getTag().equals("") ? "&nbsp;" : indexDoc.getTag()) %></span>
+                                <br/><input type="button" value="Add Tags" onclick="addTags(event, '<%= indexDoc.getTitle() %>', '<%= indexDoc.getUID() %>  --%>')"/>
                             </td>
+                                -->
                             <td class="itemCell">
-                                <%= indexDoc.getPriceDisplay() %>
+                                <%= indexDoc.getPrice() %>
                             </td>
                         </tr>
+                        
 <%
         }
-    }                        
-}
+    }
 %>
                             <tr>
                                 <td colspan="5">
@@ -261,6 +282,7 @@ if(searchBean != null) {
                     <h:messages/>
                 </h:form>
                 <br/><br/><br/>
+ <!--
                 <div class="tagDiv" id="addTags">
                     <form>
                     <table>
@@ -283,6 +305,7 @@ if(searchBean != null) {
                     <input type="hidden" id="addTagsItemId"/>
                     </form>
                 </div>
+ -->
             </f:view>
         </center>
         <jsp:include page="footer.jsp" />
