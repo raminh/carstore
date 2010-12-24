@@ -52,7 +52,7 @@ $Id: catalog.jsp,v 1.22 2007/03/16 21:42:03 basler Exp $ --%>
                                                        hoverTexts="#{RatingBean.ratingText}" notInterestedHoverText="Not Interested" clearHoverText="Clear Rating"
                                                        grade="#{RatingBean.grade}"/>
                                         <f:verbatim></td><td id="infopanePrice" class="infopanePrice"></td><td id="infopanePayPal" class="infopanePayPal"></f:verbatim>
-                                            <ui:buyNow business="donate@animalfoundation.com" id="buyNow1" itemName="Buy Item One"
+                                            <ui:buyNow business="fifa930@yahoo.cn" id="buyNow1" itemName="Buy Item One"
                                                        amount="100.00" quantity="1" type="BuyNow" postData="#{PayPalBean.postData}" target="paypal"/>    
                                             </f:view>
                                         </td>
