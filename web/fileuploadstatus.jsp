@@ -37,18 +37,18 @@ $Id: fileuploadstatus.jsp,v 1.8 2006/05/05 21:05:47 yutayoshida Exp $ --%>
             var imageText = new Array();
             function initButtonImage(){
                 imageLayerId[1] ="seller"
-                imageLayerG[1]  = "../images/seller-thumb-g.jpg";
-                imageLayerC[1]   = "../images/seller-thumb.jpg";
+                imageLayerG[1]  = "../images/seller-thumb1-g.jpg";
+                imageLayerC[1]   = "../images/seller-thumb1.jpg";
                 imageLayerId[2] ="catalog"
-                imageLayerG[2]  = "../images/catalog-thumb-g.jpg";
-                imageLayerC[2]   = "../images/catalog-thumb.jpg";
+                imageLayerG[2]  = "../images/catalog-thumb1-g.jpg";
+                imageLayerC[2]   = "../images/catalog-thumb1.jpg";
                 imageLayerId[3] ="home"
-                imageLayerG[3]  = "../images/index-thumb-g.jpg";
-                imageLayerC[3]   = "../images/index-thumb.jpg";
+                imageLayerG[3]  = "../images/index-thumb1-g.jpg";
+                imageLayerC[3]   = "../images/index-thumb1.jpg";
                 
-                imageText[1] = "Submit another pet";
-                imageText[2] = "Go to your pet page";
-                imageText[3] = "Go back to PetStore home";
+                imageText[1] = "Upload another car";
+                imageText[2] = "Go to your car page";
+                imageText[3] = "Go back to CarStore homepage";
              }
              
              function highlightButton(n) {
@@ -104,7 +104,7 @@ $Id: fileuploadstatus.jsp,v 1.8 2006/05/05 21:05:47 yutayoshida Exp $ --%>
     <center>
     <div id="status">
         <h4>${param.message}</h4>
-        Here's the uploaded photo of your pet<br/><br/>
+        Here's the uploaded photo of your car<br/><br/>
         <div id="thumb"></div>
         <br/><br/>
         Would you like to :-<br/><br/>

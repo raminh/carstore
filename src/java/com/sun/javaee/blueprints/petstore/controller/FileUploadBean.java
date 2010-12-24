@@ -292,7 +292,7 @@ public class FileUploadBean {
                 return;
             }
             
-            String responseMessage = firstName+", Thank you for submitting your pet "+name+" !";
+            String responseMessage = firstName+", Thank you for submitting your Car "+name+" !";
             FileUploadResponse fuResponse = new FileUploadResponse(
                     itemId,
                     prodId,

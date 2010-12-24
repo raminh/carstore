@@ -11,7 +11,7 @@ $Id: fileupload.jsp,v 1.57 2007/03/08 21:58:48 inder Exp $ --%>
 
 <html>
     <head>
-        <title>Petstore Seller page</title>
+        <title>Car Sellers</title>
     <script type="text/javascript">
     var submittingForm=false;
     
@@ -229,7 +229,7 @@ div.pane {
                 <div class="pane"style="position:absolute; top:125px;" id="pane1">
                     <h:panelGrid  border="0" columns="2" style="width: 100%" columnClasses="nameCol, dataCol">
                         <f:facet name="header">
-                            <h:outputText value="Information about your pet"/>
+                            <h:outputText value="Information about your car"/>
                         </f:facet>
 
                         <h:outputText value="Category"/>
@@ -237,7 +237,7 @@ div.pane {
                             <f:selectItems value="#{FileUploadBean.products}"/>
                         </h:selectOneMenu>
 
-                        <h:outputText value="*Pet's Name"/>
+                        <h:outputText value="*Car Name"/>
                         <h:inputText size="20" id="name"></h:inputText>
 
                         <h:outputText value="*Description (3 lines max display in catalog)"/>
