@@ -143,7 +143,7 @@ $Id: fileupload.jsp,v 1.57 2007/03/08 21:58:48 inder Exp $ --%>
    function showFU() {
        document.getElementById("fucomponent").style.visibility = "visible";
 	   document.getElementById("fucomponent").style.left=100+"px";
-	   document.getElementById("fucomponent").style.Top=500+"px";
+	   document.getElementById("fucomponent").style.Top=0+"px";
    }
    
    function switchPanes(fromDivId, toDivId) {
@@ -156,7 +156,7 @@ $Id: fileupload.jsp,v 1.57 2007/03/08 21:58:48 inder Exp $ --%>
 </script>
 <style>
 span.button {    
-    background-color: #6699CC; 
+    background-color: #000000;
     color: white; 
     cursor:pointer;
     border: thin outset black;
@@ -164,7 +164,7 @@ span.button {
 }
 div.pane {
     width: 90%; 
-    background-color: #EEEEEE;
+    background-color:#EEEEEE;
     border: thin double blue;
     padding: .5cm;
     font: 12px arial;
@@ -204,14 +204,14 @@ div.pane {
                         <h:outputText value="*Street"/>
                         <h:inputText size="20" id="street1"></h:inputText>
                         <h:outputText value="*City"/>
-                        <ui:autoComplete size="20" maxlength="10" id="cityField"
+                        <ui:autoComplete   size="20"  maxlength="10" id="cityField"
                         completionMethod="#{AutocompleteBean.completeCity}"
                         value="#{AddressBean.city}" required="true"
                         ondisplay="function(item) { return extractCity(item); }"
                         onchoose="function(item) { return chooseCity(item); }" />
                         <h:outputText value="*State"/>
-                        <ui:autoComplete size="2"  maxlength="10" id="stateField" 
-                        completionMethod="#{AutocompleteBean.completeState}" 
+                        <ui:autoComplete style="position:relative;" size="20"   maxlength="10" id="stateField"
+                        completionMethod="#{AutocompleteBean.completeState}"
                         value="#{AddressBean.state}" required="true" />
                         <h:outputText value="*Zip Code"/>
                         <h:inputText size="5" id="zipField" value="#{AddressBean.zip}" required="true" />

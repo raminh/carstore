@@ -19,17 +19,17 @@ $Id: search.jsp,v 1.28 2006/12/04 21:34:10 basler Exp $ --%>
                 padding: 0.3cm;
                 width: 800px;
                 border-style: double; 
-                border-color: darkgreen; 
+                border-color:#0065CA;
             }
             .itemCell {
                 border-style: solid; 
-                border-color: darkgreen; 
+                border-color: #0065CA;
                 border-width: thin;
                 padding: 5px
             }
             .tagDiv {
                 border-style: groove; 
-                border-color: darkgreen; 
+                border-color: #0065CA;
                 background-color: white;
                 border-width: thick;
                 padding: 5px;

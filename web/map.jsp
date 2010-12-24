@@ -19,7 +19,7 @@ $Id: map.jsp,v 1.20 2006/11/02 00:34:49 basler Exp $ --%>
         <br>
         <center>
             <table border="1" cellspacing="5px" cellpadding="5px"
-                style="border-style:double; border-color:darkgreen; padding:5px">
+                style="border-style:double; border-color:#0065CA; padding:5px">
                 <tr>
                     <td valign="top" align="center" width="200px">
                     <table border="0">

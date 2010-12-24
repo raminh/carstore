@@ -97,10 +97,8 @@ try {
                             </table>
                         </div>
                     </td>
-                    <td style="vertical-align:top; width:300px; text-align:right;">
-                        <div id="downloadAds">
-                            <jsp:include page="download.jsp" />
-                        </div>
+                    <td style="vertical-align:top; width:100px; text-align:right;">
+                       
                     </td>
                 </tr>
             </table>

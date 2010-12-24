@@ -19,7 +19,7 @@ $Id: mapAll.jsp,v 1.14 2006/12/06 22:44:37 basler Exp $ --%>
         <f:view>
 
             <h:form id="form1">
-                <table border="1" cellpadding="5" cellspacing="5" style="border-style:double; width:600px; border-color:darkgreen; padding:5px">
+                <table border="1" cellpadding="5" cellspacing="5" style="border-style:double; width:800px; border-color:#0065CA; padding:5px">
                     <tr>
                         <td colspan=3>
                         <i>Select the category whose items will be displayed in a Google map based on the Seller's address.  
@@ -30,7 +30,7 @@ $Id: mapAll.jsp,v 1.14 2006/12/06 22:44:37 basler Exp $ --%>
                     <tr>
                         <th align="right">Select Category to Map:</th>
                         <td align="center" colspan=2>
-                            <h:selectOneRadio value="#{MapBean.category}" required="true">
+                            <h:selectOneRadio value="#{MapBean.category}" required="true"  style="font-size:13px;">
                                 <f:selectItems value="#{MapBean.categories}"/>
                             </h:selectOneRadio>
                         </td>

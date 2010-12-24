@@ -78,10 +78,8 @@ $Id: catalog.jsp,v 1.22 2007/03/16 21:42:03 basler Exp $ --%>
                     </tr>
                 </table>
             </td>
-            <td style="vertical-align:top; width:500px; text-align:right;">
-                <div id="downloadAds">
-                    <jsp:include page="download.jsp" />
-                </div>
+            <td style="width:1px; text-align:right;">
+               
             </td>
         </tr>
     </table>
