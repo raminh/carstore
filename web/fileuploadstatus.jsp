@@ -37,14 +37,14 @@ $Id: fileuploadstatus.jsp,v 1.8 2006/05/05 21:05:47 yutayoshida Exp $ --%>
             var imageText = new Array();
             function initButtonImage(){
                 imageLayerId[1] ="seller"
-                imageLayerG[1]  = "../images/seller-thumb1-g.jpg";
-                imageLayerC[1]   = "../images/seller-thumb1.jpg";
+                imageLayerG[1]  = "../images/seller-thumb-g.jpg";
+                imageLayerC[1]   = "../images/seller-thumb.jpg";
                 imageLayerId[2] ="catalog"
-                imageLayerG[2]  = "../images/catalog-thumb1-g.jpg";
-                imageLayerC[2]   = "../images/catalog-thumb1.jpg";
+                imageLayerG[2]  = "../images/catalog-thumb-g.jpg";
+                imageLayerC[2]   = "../images/catalog-thumb.jpg";
                 imageLayerId[3] ="home"
-                imageLayerG[3]  = "../images/index-thumb1-g.jpg";
-                imageLayerC[3]   = "../images/index-thumb1.jpg";
+                imageLayerG[3]  = "../images/index-thumb-g.jpg";
+                imageLayerC[3]   = "../images/index-thumb.jpg";
                 
                 imageText[1] = "Upload another car";
                 imageText[2] = "Go to your car page";
