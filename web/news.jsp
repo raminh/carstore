@@ -13,7 +13,7 @@ $Id: news.jsp,v 1.2 2006/12/14 01:04:50 yutayoshida Exp $ --%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>BluePrints News Page</title>
+        <title>BMW News Page</title>
         <script type="text/javascript" src="${pageContext.request.contextPath}/faces/static/META-INF/dojo/bpcatalog/dojo.js"></script>
         <script type="text/javascript" src="${pageContext.request.contextPath}/news.js"></script>
 
@@ -32,7 +32,7 @@ $Id: news.jsp,v 1.2 2006/12/14 01:04:50 yutayoshida Exp $ --%>
     </script>
     <body>
         <jsp:include page="banner.jsp" />
-        <h2><a href="http://blueprints.dev.java.net">BluePrints News</a></h2>
+        <h2><a href="http://blueprints.dev.java.net">BMW News</a></h2>
         <center>
             <table border="0" width="95%">
                 <tr>
