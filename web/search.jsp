@@ -165,7 +165,8 @@ $Id: search.jsp,v 1.28 2006/12/04 21:34:10 basler Exp $ --%>
                             <th class="itemCell">Search String</th>
                             <td class="itemCell">
                                 <h:inputText size="50" id="searchString" value="#{SearchBean.searchString}"/>
-                                &nbsp;&nbsp;&nbsp;Also Search Tags:<h:selectBooleanCheckbox id="searchTags" value="#{SearchBean.searchTags}"/>
+
+                                <!--&nbsp;&nbsp;&nbsp;Also Search Tags:--><%--<h:selectBooleanCheckbox id="searchTags" value="#{SearchBean.searchTags}"/>--%>
                             </td>
                         </tr>
                         <tr>
@@ -207,7 +208,10 @@ if(searchBean != null) {
                                 --%>
 <%
     CatalogFacade cf = (CatalogFacade)config.getServletContext().getAttribute("CatalogFacade");
-    List<Item> items=cf.getItemsByCarName("TOYOTA",0, 90);
+    SearchBean searchBean=(SearchBean)session.getAttribute("SearchBean");
+    if(searchBean != null)
+    {
+      List<Item> items=cf.getItemsByCarName(searchBean.searchString,0, 90);
     // since top 20 come from database or desending refCount order, need to reorder by tag name
     /*
     Collections.sort(items, new Comparator() {
@@ -216,10 +220,14 @@ if(searchBean != null) {
         }
     });
     */
-    if(items != null)
-    {
-      for(Item indexDoc : items){
-%>
+
+//SearchBean searchBean=(SearchBean)session.getAttribute("SearchBean");
+//if(searchBean != null) {
+  //  List<Item> hits=searchBean.getItems();
+    //if(hits != null) {
+        for(Item indexDoc : items) {
+
+ %>
                                 <tr>
                                 <td class="itemCell">
                                     <input type="checkbox" name="mapSelectedItems" value="<%= indexDoc.getItemID() %>"/>
@@ -240,13 +248,13 @@ if(searchBean != null) {
                             </td>
                                 -->
                             <td class="itemCell">
-                                <%= indexDoc.getPrice() %>
+                                $<%= indexDoc.getPrice() %>
                             </td>
                         </tr>
                         
 <%
         }
-    }
+   }
 %>
                             <tr>
                                 <td colspan="5">

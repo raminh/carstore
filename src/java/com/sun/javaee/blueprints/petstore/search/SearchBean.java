@@ -3,9 +3,12 @@ $Id: SearchBean.java,v 1.6 2007/01/17 18:00:08 basler Exp $ */
 
 package com.sun.javaee.blueprints.petstore.search;
 
-import java.util.Vector;
+import com.sun.javaee.blueprints.petstore.model.CatalogFacade;
+import com.sun.javaee.blueprints.petstore.model.Item;
 import com.sun.javaee.blueprints.petstore.util.PetstoreConstants;
 import java.util.List;
+
+
 
 /**
  *
@@ -13,12 +16,16 @@ import java.util.List;
  */
 public class SearchBean {
     
-    private String searchString="cat";
+    public String searchString="TOYOTA";
     private boolean searchTags=true, showResults=false;
     private List<IndexDocument> hitsList=null;
+    private List<Item> itemList=null;
+    public  CatalogFacade itemlistcat;
+
     
     /** Creates a new instance of SearchBean */
     public SearchBean() {
+        itemlistcat =new CatalogFacade();
     }
     
     
@@ -42,11 +49,16 @@ public class SearchBean {
     public boolean getShowResults() {
         return showResults;
     }
+
     
     public List<IndexDocument> getHits() {
         return hitsList;
     }
-    
+
+    public List<Item> getItems() {
+        return itemList;
+    }
+  
     
     public String searchAction() {
         // perform search
@@ -65,6 +77,9 @@ public class SearchBean {
             e.printStackTrace();
         }
 
+ //       itemList = itemlistcat.getItemsByCarName(searchString, 0, 9);
+        
+ //       setShowResults(true);
         return "displayResults";
     }
  
