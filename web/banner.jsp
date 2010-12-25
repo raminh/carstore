@@ -60,7 +60,7 @@ $Id: banner.jsp,v 1.28 2006/12/19 20:23:53 yutayoshida Exp $ --%>
     </div>
     <script type="text/javascript">
     // <![CDATA[
-        var so = new SWFObject("menu.swf", "menu", "840", "140", "8", "#000000");
+        var so = new SWFObject("menu1.swf", "menu", "840", "140", "8", "#000000");
         
         so.addParam("wmode", "transparent");
         so.addParam("scale", "noscale");

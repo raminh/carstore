@@ -5,10 +5,10 @@ $Id: footer.jsp,v 1.10 2007/01/31 19:40:34 basler Exp $ --%>
     <head>
 
     </head>
-    <body>
+    <body style="font-size:10px;">
+        <table width="100%"><tr  style="background-color:#6699CC;"><td>&nbsp;</td></tr></table>
         <center>
-        This a sample version of car store.
-        <br>For more information, Please visit <a href="https://sites.google.com/site/bthcarestore/home?pli=1">carstore project website</a>
+            &copy;2010 - <a href="https://sites.google.com/site/bthcarestore/home?pli=1">BTH carstore project team</a>
         </center>
     </body>
 </html>

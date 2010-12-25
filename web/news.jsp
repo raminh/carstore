@@ -32,7 +32,7 @@ $Id: news.jsp,v 1.2 2006/12/14 01:04:50 yutayoshida Exp $ --%>
     </script>
     <body>
         <jsp:include page="banner.jsp" />
-        <h2><a href="http://blueprints.dev.java.net">BMW News</a></h2>
+        <h2><a href="http://www.bmw.tv/">BMW News</a></h2>
         <center>
             <table border="0" width="95%">
                 <tr>
