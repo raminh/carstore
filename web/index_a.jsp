@@ -2,7 +2,7 @@
 $Id: index.jsp,v 1.18 2007/03/16 15:29:15 basler Exp $ --%>
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@page import="java.util.*, com.sun.javaee.blueprints.petstore.model.CatalogFacade, com.sun.javaee.blueprints.petstore.model.Tag"%>
+<%@page import="java.util.*, com.sun.javaee.blueprints.carstore.model.CatalogFacade, com.sun.javaee.blueprints.carstore.model.Tag"%>
 
 <%
 try {

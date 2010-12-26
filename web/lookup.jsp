@@ -3,7 +3,7 @@ $Id: lookup.jsp,v 1.7 2007/01/19 21:47:31 basler Exp $ --%>
 
 <%@page contentType="text/xml"%>
 <%@page pageEncoding="UTF-8"%>
-<%@page import="com.sun.javaee.blueprints.petstore.model.CatalogFacade, com.sun.javaee.blueprints.petstore.model.Item"%>
+<%@page import="com.sun.javaee.blueprints.carstore.model.CatalogFacade, com.sun.javaee.blueprints.carstore.model.Item"%>
 
 <%
     String itemId=request.getParameter("itemId");

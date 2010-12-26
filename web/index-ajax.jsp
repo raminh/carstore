@@ -2,7 +2,7 @@
 $Id: index.jsp,v 1.17 2007/03/15 23:19:46 basler Exp $ --%>
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@page import="java.util.*, com.sun.javaee.blueprints.petstore.model.CatalogFacade, com.sun.javaee.blueprints.petstore.model.Tag"%>
+<%@page import="java.util.*, com.sun.javaee.blueprints.carstore.model.CatalogFacade, com.sun.javaee.blueprints.carstore.model.Tag"%>
 
 <%
 try {
@@ -35,7 +35,7 @@ try {
             dojo.require("dojo.io.*");
             dojo.require("dojo.io.ScriptSrcIO");
             //transport: "ScriptSrcTransport",
-            //url: "http://localhost:8080/petstore/downloadAd.json",
+            //url: "http://localhost:8080/carstore/downloadAd.json",
 
             function browse(category) {
                 window.location.href="${pageContext.request.contextPath}/faces/catalog.jsp?catid=" + category;
@@ -55,8 +55,8 @@ try {
             
             function checkAdPage() {
                 var bindArgs = {
-                    //url: "https://blueprints.dev.java.net/petstore/downloadAd.json",
-                    //url: "http://localhost:8080/petstore/downloadAd.json",
+                    //url: "https://blueprints.dev.java.net/carstore/downloadAd.json",
+                    //url: "http://localhost:8080/carstore/downloadAd.json",
                     url: "http://search.yahooapis.com/ImageSearchService/V1/imageSearch?appid=YahooDemo&query=Madonna&output=json&callback=ws_results",
                     transport: "ScriptSrcTransport",
                     jsonParamName: "callback",

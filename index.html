@@ -38,7 +38,7 @@ BluePrints</b></font>&nbsp; </td>
   </tbody>
 </table>
 <!---- Don't modify anything above this line, except for the title tag -------->
-<h1>Java Pet Store Reference Application<span
+<h1>Java Car Store Reference Application<span
  style="font-style: italic;"></span></h1>
 The Java Pet Store Reference application is created by the Java
 BluePrints team at Sun Microsystems to illustrate how AJAX-enabled Web
@@ -61,7 +61,7 @@ Store Reference application, please&nbsp; refer to the article at <a
  href="http://java.sun.com/developer/technicalArticles/J2EE/petstore/">http://java.sun.com/developer/technicalArticles/J2EE/petstore/</a><b><br>
 </b><br>
 <h2>Download and Install a Java EE 5 Application Server.</h2>
-The first step to using the Java Petstore 2.0 is to download and
+The first step to using the Java Carstore 2.0 is to download and
 install a Java EE 5 Application Server. We have tested on the GlassFish
 project and on the Java EE 5 SDK so recommend installing one of those
 application servers. Choose one of these options:<br>
@@ -74,7 +74,7 @@ SDK </b><br>
 and
 install the Java EE 5 SDK at a convenient location on your
 computer. &nbsp;Note, the Java EE 5 SDK already has a version of
-Petstore 2.0 bundled with it, but this version of Petstore 2.0 is the
+Carstore 2.0 bundled with it, but this version of Carstore 2.0 is the
 newest version. Note: This release of the Java Pestore has been
 tested
 on the <a href="http://java.sun.com/javaee/downloads/ea/">Java EE 5
@@ -121,7 +121,7 @@ Pet Store. See the document for <a
 the Java Pet Store with NetBeans</a> for more detail.<br>
 <br>
 If you do not use NetBeans, you can also build, deploy, and run the
-Petstore from the command line using ant. See the instructions below.
+Carstore from the command line using ant. See the instructions below.
 <h2><a name="building-deploying-running"></a>Building,
 Deploying, and Running from the Command Line</h2>
 <ol>
@@ -130,14 +130,14 @@ application server, GlassFish or the Java EE 5 SDK, as <code>&lt;javaeesdk.home&
 hereafter in this document.&nbsp;</li>
   <li>Download and install the Java Pet Store Reference
 application at a convenient location on your computer. We will refer to
-this location&nbsp;as <code>&lt;petstore.home&gt;</code>
+this location&nbsp;as <code>&lt;carstore.home&gt;</code>
 hereafter in this document.&nbsp;&nbsp;</li>
   <li>Ensure that&nbsp;<code>ant</code> is
 available in your path. You can use <code>&lt;javaeesdk.home&gt;/lib/ant/bin/</code>
 or you can use your own ant installation as long as it is ant version
 1.6.5 or later.</li>
   <li>Add <code>&lt;javaeesdk.home&gt;/bin</code> to your path.</li>
-  <li>Edit <code>&lt;petstore.home&gt;/bp-project/build.properties</code>
+  <li>Edit <code>&lt;carstore.home&gt;/bp-project/build.properties</code>
 and ensure
 that the following properties match your Java EE 5 SDK
 installation.&nbsp;<br>
@@ -226,12 +226,12 @@ and issue the following
 commands:<br>
     <code></code><code>asadmin start-database</code><code></code><br>
     <code>asadmin start-domain</code></li>
-  <li>Change directory to &lt;petstore.home&gt; and enter
+  <li>Change directory to &lt;carstore.home&gt; and enter
 the following commands<code></code><br>
     <code style="font-weight: bold;">ant setup</code><br
  style="font-weight: bold;">
     <code style="font-weight: bold;">ant run</code><br>
-This will setup, build and deploy the petstore on the application
+This will setup, build and deploy the carstore on the application
 server, and then launch the application homepage in your default
 browser. <br>
   </li>
@@ -249,11 +249,11 @@ commands:<br>
     <code>asadmin start-domain<br>
 asadmin start-database</code><br>
   </li>
-  <li>Change directory to&nbsp;<span style="font-style: italic;"></span><code>&lt;petstore.home&gt;
+  <li>Change directory to&nbsp;<span style="font-style: italic;"></span><code>&lt;carstore.home&gt;
     </code>and enter the command:<br>
     <code>ant undeploy</code><br>
     <code>ant unsetup</code><br>
-This will uninstall the petstore application
+This will uninstall the carstore application
 from the application server and remove all the database tables from the
 JavaDB database.</li>
 </ol>

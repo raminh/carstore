@@ -3,7 +3,7 @@ $Id: search.jsp,v 1.28 2006/12/04 21:34:10 basler Exp $ --%>
 
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@page import="java.util.*, com.sun.javaee.blueprints.petstore.search.*,com.sun.javaee.blueprints.petstore.model.CatalogFacade, com.sun.javaee.blueprints.petstore.model.Item"%>
+<%@page import="java.util.*, com.sun.javaee.blueprints.carstore.search.*,com.sun.javaee.blueprints.carstore.model.CatalogFacade, com.sun.javaee.blueprints.carstore.model.Item"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <%@taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
 <%@taglib uri="http://java.sun.com/jsf/core" prefix="f" %>

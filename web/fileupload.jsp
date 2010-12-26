@@ -3,7 +3,7 @@ $Id: fileupload.jsp,v 1.57 2007/03/08 21:58:48 inder Exp $ --%>
 
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@page import="com.sun.javaee.blueprints.petstore.util.PetstoreConstants"%>
+<%@page import="com.sun.javaee.blueprints.carstore.util.CarstoreConstants"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <%@taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
 <%@taglib uri="http://java.sun.com/jsf/core" prefix="f" %>

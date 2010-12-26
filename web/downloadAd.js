@@ -2,7 +2,7 @@ dojo.require("dojo.io");
 function checkAdPage() {
     var bindArgs = {
         // check to see if an updated page is available
-        URL: "http://localhost:8080/petstore/downloadAd.txt",
+        URL: "http://localhost:8080/carstore/downloadAd.txt",
         mimetype: "text/plain",
         load: returnFunctionx,
         error: ajaxBindError};
@@ -29,7 +29,7 @@ function checkAdPageMark() {
     // calculate arrow and border image location
     req=initRequest();
 
-    url="http://blueprints.dev.java.net/petstore/downloadAd.txt",
+    url="http://blueprints.dev.java.net/carstore/downloadAd.txt",
     req.onreadystatechange = returnFunctionxMark;
     req.open("GET", url, true);
     req.send(null);

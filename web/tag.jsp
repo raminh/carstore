@@ -3,7 +3,7 @@ $Id: tag.jsp,v 1.11 2007/01/17 18:00:09 basler Exp $ --%>
 
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@page import="java.util.*, com.sun.javaee.blueprints.petstore.model.CatalogFacade, com.sun.javaee.blueprints.petstore.model.Tag"%>
+<%@page import="java.util.*, com.sun.javaee.blueprints.carstore.model.CatalogFacade, com.sun.javaee.blueprints.carstore.model.Tag"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <%@taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
 <%@taglib uri="http://java.sun.com/jsf/core" prefix="f" %>

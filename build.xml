@@ -3,8 +3,8 @@
  http://developer.sun.com/berkeley_license.html
  $Id: build.xml,v 1.56 2007/03/16 15:29:15 basler Exp $ -->
  
-<project name="petstore" default="default" basedir=".">
-    <description>Builds, tests, and runs the project petstore.</description>
+<project name="carstore" default="default" basedir=".">
+    <description>Builds, tests, and runs the project carstore.</description>
     
     <property name="is.war.module" value="true"/>
     <property name="default.javac.target" value="1.5"/>
@@ -14,7 +14,7 @@
     <available property="bp-ui-5-jar.exists" file="lib/bp-ui-5.jar"/>    
     <target name="create-bp-ui-5-jar" depends="init" unless="bp-ui-5-jar.exists">
         <ant dir="${bp-ui-5.home}" inheritAll="false" inheritRefs="false"/>
-        <!-- copy appropriate jars that are needed in petstore -->
+        <!-- copy appropriate jars that are needed in carstore -->
         <copy todir="lib/">
             <fileset dir="${bp-ui-5.home}/dist"/> 
         </copy>
@@ -62,11 +62,11 @@
     </target>
     
     <target name="unzipIndexes">
-        <unzip src="lib/petstoreIndexes.zip" dest="${javaee.domaindir}/lib/petstore" overwrite="true"/>
+        <unzip src="lib/petstoreIndexes.zip" dest="${javaee.domaindir}/lib/carstore" overwrite="true"/>
     </target>
     
     <target name="setup" depends="init, create-bp-ui-5-jar">
-        <mkdir dir="${javaee.domaindir}/lib/petstore/images"/>
+        <mkdir dir="${javaee.domaindir}/lib/carstore/images"/>
         <ant dir="." antfile="setup/setup.xml" target="setup" inheritAll="false" inheritRefs="false"/>
         <antcall target="unzipIndexes"/>
     </target>

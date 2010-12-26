@@ -1,14 +1,14 @@
 <%-- Copyright 2006 Sun Microsystems, Inc. All rights reserved. You may not modify, use, reproduce, or distribute this software except in compliance with the terms of the License at: http://developer.sun.com/berkeley_license.html
 $Id: systemerror.jsp,v 1.3 2007/01/09 19:02:12 basler Exp $ --%>
 <%@ page isErrorPage="true" %>
-<%@ page import="com.sun.javaee.blueprints.petstore.util.PetstoreUtil, java.util.logging.Level" %>
+<%@ page import="com.sun.javaee.blueprints.carstore.util.CarstoreUtil, java.util.logging.Level" %>
 <%
-PetstoreUtil.getLogger().log(Level.INFO, "Encountered a Runtime Exception and being transferred the the systemerror page", exception);
+CarstoreUtil.getLogger().log(Level.INFO, "Encountered a Runtime Exception and being transferred the the systemerror page", exception);
 %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-        <title>Java Pet Store Reference Application: System Error Page</title>
+        <title>Java Car Store Reference Application: System Error Page</title>
     </head>
     <body>
         

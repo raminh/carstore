@@ -13,49 +13,49 @@
     <!-- ========== Managed Beans ============================================ -->
     <managed-bean>
         <managed-bean-name>SearchBean</managed-bean-name>
-        <managed-bean-class>com.sun.javaee.blueprints.petstore.search.SearchBean</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
+        <managed-bean-class>com.sun.javaee.blueprints.carstore.search.SearchBean</managed-bean-class>
+
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
 
     <managed-bean>
         <managed-bean-name>RatingBean</managed-bean-name>
-        <managed-bean-class>com.sun.javaee.blueprints.petstore.model.RatingBean</managed-bean-class>
+        <managed-bean-class>com.sun.javaee.blueprints.carstore.model.RatingBean</managed-bean-class>
+
         <managed-bean-scope>request</managed-bean-scope>
         <managed-property>
             <property-name>itemId</property-name>
             <value>#{param.itemIdBinding}</value>
-        </managed-property>             
-    </managed-bean>
+        </managed-property></managed-bean>
     
     <managed-bean>
         <managed-bean-name>PayPalBean</managed-bean-name>
-        <managed-bean-class>com.sun.javaee.blueprints.petstore.model.PayPalBean</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
+        <managed-bean-class>com.sun.javaee.blueprints.carstore.model.PayPalBean</managed-bean-class>
+
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
     
     <managed-bean>
         <managed-bean-name>FileUploadBean</managed-bean-name>
-        <managed-bean-class>com.sun.javaee.blueprints.petstore.controller.FileUploadBean</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
+        <managed-bean-class>com.sun.javaee.blueprints.carstore.controller.FileUploadBean</managed-bean-class>
+
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
     
     <managed-bean>
         <managed-bean-name>MapBean</managed-bean-name>
-        <managed-bean-class>com.sun.javaee.blueprints.petstore.mapviewer.MapBean</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
+        <managed-bean-class>com.sun.javaee.blueprints.carstore.mapviewer.MapBean</managed-bean-class>
+
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
     
     <managed-bean>
         <managed-bean-name>AutocompleteBean</managed-bean-name>
-        <managed-bean-class>com.sun.javaee.blueprints.petstore.controller.AutocompleteBean</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
+        <managed-bean-class>com.sun.javaee.blueprints.carstore.controller.AutocompleteBean</managed-bean-class>
+
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
        
     <managed-bean>
         <managed-bean-name>AddressBean</managed-bean-name>
-        <managed-bean-class>com.sun.javaee.blueprints.petstore.controller.AddressBean</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
+        <managed-bean-class>com.sun.javaee.blueprints.carstore.controller.AddressBean</managed-bean-class>
+
+        <managed-bean-scope>session</managed-bean-scope></managed-bean>
   
     <!-- ========== Navigation Rules ========================================= -->
     <navigation-rule>

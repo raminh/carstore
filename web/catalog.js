@@ -307,7 +307,7 @@ function CatalogController() {
   this.disableItem=function(itemId, itemName) {
         // go out and get the categories
         // this should be made more geric
-        if (confirm("Are you sure you want to effectively remove this item from Petstore?")) {
+        if (confirm("Are you sure you want to effectively remove this item from carstore?")) {
             var bindArgs = {
                 url:  applicationContextRoot + "/catalog?command=disable&id=" + itemId,
                 mimetype: "text/xml",

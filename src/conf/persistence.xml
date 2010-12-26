@@ -6,11 +6,11 @@
 
 <persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" 
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"> 
-    <persistence-unit name="PetstorePu">
-        <description>Petstore Persistence Unit
+    <persistence-unit name="CarstorePu">
+        <description>Carstore Persistence Unit
         </description>
-        <jta-data-source>jdbc/PetstoreDB</jta-data-source>
-        <non-jta-data-source>jdbc/PetstoreDB</non-jta-data-source>
+        <jta-data-source>jdbc/CarstoreDB</jta-data-source>
+        <non-jta-data-source>jdbc/CarstoreDB</non-jta-data-source>
     </persistence-unit>
 </persistence>
 

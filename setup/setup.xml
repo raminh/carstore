@@ -3,7 +3,7 @@
  http://developer.sun.com/berkeley_license.html
  $Id: setup.xml,v 1.10 2006/05/03 22:03:20 inder Exp $ -->
  
-<project name="petstore-setup" default="setup" basedir="..">
+<project name="carstore-setup" default="setup" basedir="..">
 
   <property file="./setup/javadb.properties" />
   <import file="../bp-project.xml" />
@@ -26,7 +26,7 @@
          onerror="abort" >
       <transaction src="${db.create.src}"/>
     </sql>    
-    <dirname property="petstore-setup.dir" file="${ant.file.petstore-setup}"/>
+    <dirname property="carstore-setup.dir" file="${ant.file.carstore-setup}"/>
     <sql driver="${db.driver}"
          encoding="utf-8"
          url="${db.url}"
@@ -36,7 +36,7 @@
          delimiter="${db.delimiter}"
          autocommit="true"
          onerror="abort" ><![CDATA[
-      CALL SYSCS_UTIL.SYSCS_IMPORT_TABLE (null, 'ZIPLOCATION', '${petstore-setup.dir}/sql/javadb/cities.del', null, null, null, 0);
+      CALL SYSCS_UTIL.SYSCS_IMPORT_TABLE (null, 'ZIPLOCATION', '${carstore-setup.dir}/sql/javadb/cities.del', null, null, null, 0);
       ]]>
     </sql>
     
@@ -61,34 +61,34 @@
   </target>
   
   <target name="create-pool-local" depends="tools">
-    <echo message="Registering jdbc-connection-pool PetstorePool."/>
+    <echo message="Registering jdbc-connection-pool CarstorePool."/>
     <echo>ds=${db.datasource}</echo>
     <antcall target="create-jdbc-connection-pool">
-      <param name="pool.name"     value="PetstorePool" />
+      <param name="pool.name"     value="CarstorePool" />
       <param name="db.serverName"   value="${javaee.server.name}" />
       <param name="ds.class"      value="${db.datasource}" />
     </antcall>
  </target>
 
  <target name="create-resource-local" depends="tools,create-pool-local">
-    <echo message="Registering jdbc resource jdbc/PetstoreDB."/>
+    <echo message="Registering jdbc resource jdbc/CarstoreDB."/>
     <antcall target="create-jdbc-resource">
-      <param name="pool.name"            value="PetstorePool" />
-      <param name="jdbc.resource.name"   value="jdbc/PetstoreDB" />
+      <param name="pool.name"            value="CarstorePool" />
+      <param name="jdbc.resource.name"   value="jdbc/CarstoreDB" />
     </antcall>
  </target>
 
   <target name="delete-resource-local" depends="tools" >
-    <echo message="Deleting jdbc resource jdbc/PetstoreDB"/>
+    <echo message="Deleting jdbc resource jdbc/CarstoreDB"/>
     <antcall target="delete-jdbc-resource">
-      <param name="jdbc.resource.name" value="jdbc/PetstoreDB" />
+      <param name="jdbc.resource.name" value="jdbc/CarstoreDB" />
     </antcall> 
  </target>
 
  <target name="delete-pool-local" depends="tools, delete-resource-local">
-    <echo message="Deleting jdbc-connection-pool PetstorePool."/>
+    <echo message="Deleting jdbc-connection-pool CarstorePool."/>
     <antcall target="delete-jdbc-connection-pool">
-      <param name="pool.name" value="PetstorePool" />
+      <param name="pool.name" value="CarstorePool" />
     </antcall>
  </target>
 

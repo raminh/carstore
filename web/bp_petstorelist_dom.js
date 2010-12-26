@@ -2,26 +2,26 @@ var bpui;
 if(typeof bpui == "undefined") {
     bpui=new Object();
 }
-bpui.petstoreList=new Object();
+bpui.carstoreList=new Object();
 
-bpui.petstoreList.divName="";
-bpui.petstoreList.currentCount=0;
+bpui.carstoreList.divName="";
+bpui.carstoreList.currentCount=0;
 
-bpui.petstoreList.populateData=function(datax) {
+bpui.carstoreList.populateData=function(datax) {
     if(typeof datax != "undefined") {
         
         // get outerdiv
-        var targetDiv=document.getElementById(bpui.petstoreList.divName);
+        var targetDiv=document.getElementById(bpui.carstoreList.divName);
         
         // make sure div is clear
         targetDiv.innerHTML="";
         
         // add class to containing div
-        targetDiv.setAttribute("class", "bpui_petstorelist_div")
+        targetDiv.setAttribute("class", "bpui_carstorelist_div")
         
         // add table
         tablex=document.createElement("table");
-        tablex.setAttribute("class", "bpui_petstorelist_table")
+        tablex.setAttribute("class", "bpui_carstorelist_table")
         targetDiv.appendChild(tablex);
 
         // loop through product results
@@ -32,11 +32,11 @@ bpui.petstoreList.populateData=function(datax) {
             // add product image with hyperlink
             colx=document.createElement("td");
             ax=document.createElement("a");
-            ax.setAttribute("href", "http://localhost:8080/petstore/faces/catalog.jsp#" + datax[ii].productID + "," + datax[ii].itemID)
-            ax.setAttribute("target", "bppetstore")
-            ax.setAttribute("class", "bpui_petstorelist_image")
+            ax.setAttribute("href", "http://localhost:8080/carstore/faces/catalog.jsp#" + datax[ii].productID + "," + datax[ii].itemID)
+            ax.setAttribute("target", "bpcarstore")
+            ax.setAttribute("class", "bpui_carstorelist_image")
             imgx=document.createElement("img");
-            imgx.setAttribute("src", "http://localhost:8080/petstore/ImageServlet/" + datax[ii].imageThumbURL);
+            imgx.setAttribute("src", "http://localhost:8080/carstore/ImageServlet/" + datax[ii].imageThumbURL);
             ax.appendChild(imgx);
             colx.appendChild(ax);
             rowx.appendChild(colx);
@@ -44,18 +44,18 @@ bpui.petstoreList.populateData=function(datax) {
             // add product name with hyperlink
             colx=document.createElement("td");
             ax=document.createElement("a");
-            ax.setAttribute("href", "http://localhost:8080/petstore/faces/catalog.jsp#" + datax[ii].productID + "," + datax[ii].itemID)
-            ax.setAttribute("target", "bppetstore")
-            ax.setAttribute("class", "bpui_petstorelist_name_link")
+            ax.setAttribute("href", "http://localhost:8080/carstore/faces/catalog.jsp#" + datax[ii].productID + "," + datax[ii].itemID)
+            ax.setAttribute("target", "bpcarstore")
+            ax.setAttribute("class", "bpui_carstorelist_name_link")
             spanx=document.createElement("span");
-            spanx.setAttribute("class", "bpui_petstorelist_name")
+            spanx.setAttribute("class", "bpui_carstorelist_name")
             spanx.appendChild(document.createTextNode(datax[ii].name));
             ax.appendChild(spanx);
             colx.appendChild(ax);
             colx.appendChild(document.createElement("br"));
             // add product description
             spanx=document.createElement("span");
-            spanx.setAttribute("class", "bpui_petstorelist_description");
+            spanx.setAttribute("class", "bpui_carstorelist_description");
             spanx.appendChild(document.createTextNode(datax[ii].description));
             colx.appendChild(spanx);
             rowx.appendChild(colx);
@@ -63,7 +63,7 @@ bpui.petstoreList.populateData=function(datax) {
             // add product price
             colx=document.createElement("td");
             spanx=document.createElement("span");
-            spanx.setAttribute("class", "bpui_petstorelist_price");
+            spanx.setAttribute("class", "bpui_carstorelist_price");
             spanx.appendChild(document.createTextNode("\$" + datax[ii].price));
             colx.appendChild(spanx);
             rowx.appendChild(colx);
@@ -77,14 +77,14 @@ bpui.petstoreList.populateData=function(datax) {
         colx=document.createElement("td");
         colx.setAttribute("colspan", "3");
         spanx=document.createElement("span");
-        spanx.setAttribute("class", "bpui_petstorelist_previous");
-        spanx.setAttribute("onclick", "bpui.petstoreList.previousProducts();");
+        spanx.setAttribute("class", "bpui_carstorelist_previous");
+        spanx.setAttribute("onclick", "bpui.carstoreList.previousProducts();");
         spanx.appendChild(document.createTextNode("<< PREVIOUS"));
         colx.appendChild(spanx);
         
         spanx=document.createElement("span");
-        spanx.setAttribute("class", "bpui_petstorelist_next");
-        spanx.setAttribute("onclick", "bpui.petstoreList.nextProducts();");
+        spanx.setAttribute("class", "bpui_carstorelist_next");
+        spanx.setAttribute("onclick", "bpui.carstoreList.nextProducts();");
         spanx.appendChild(document.createTextNode("NEXT >>"));
         colx.appendChild(spanx);
         rowx.appendChild(colx);
@@ -95,42 +95,42 @@ bpui.petstoreList.populateData=function(datax) {
 }
 
 
-bpui.petstoreList.nextProducts=function() {
+bpui.carstoreList.nextProducts=function() {
     // load data from service
-    bpui.petstoreList.currentCount += 5;
-    bpui.petstoreList.updateProducts();
+    bpui.carstoreList.currentCount += 5;
+    bpui.carstoreList.updateProducts();
 }
 
 
-bpui.petstoreList.previousProducts=function() {
-    bpui.petstoreList.currentCount -= 5;
-    if(bpui.petstoreList.currentCount < 0) {
-        bpui.petstoreList.currentCount=0;
+bpui.carstoreList.previousProducts=function() {
+    bpui.carstoreList.currentCount -= 5;
+    if(bpui.carstoreList.currentCount < 0) {
+        bpui.carstoreList.currentCount=0;
     }
-    bpui.petstoreList.updateProducts();
+    bpui.carstoreList.updateProducts();
 }
 
 
-bpui.petstoreList.updateProducts=function() {
+bpui.carstoreList.updateProducts=function() {
     // load data from service
     bodyTag=document.getElementsByTagName("body")[0];
     scriptx=document.createElement("script");
     scriptx.setAttribute("type", "text/javascript");
-    scriptx.setAttribute("src", "http://localhost:8080/petstore/catalog?command=items&pid=feline01&start=" + bpui.petstoreList.currentCount + "&length=5&format=jsonp");
+    scriptx.setAttribute("src", "http://localhost:8080/carstore/catalog?command=items&pid=feline01&start=" + bpui.carstoreList.currentCount + "&length=5&format=jsonp");
     bodyTag.appendChild(scriptx);
 }
 
 
 
-bpui.petstoreList.createPetstoreList=function(divName) {
+bpui.carstoreList.createCarstoreList=function(divName) {
     // keep divName for later references
-    bpui.petstoreList.divName=divName;
+    bpui.carstoreList.divName=divName;
 
     // load data from service
     bodyTag=document.getElementsByTagName("body")[0];
     scriptx=document.createElement("script");
     scriptx.setAttribute("type", "text/javascript");
-    scriptx.setAttribute("src", "http://localhost:8080/petstore/catalog?command=items&pid=feline01&start=0&length=5&format=jsonp");
+    scriptx.setAttribute("src", "http://localhost:8080/carstore/catalog?command=items&pid=feline01&start=0&length=5&format=jsonp");
     bodyTag.appendChild(scriptx);
 }
 

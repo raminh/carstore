@@ -3,7 +3,7 @@ $Id: map.jsp,v 1.20 2006/11/02 00:34:49 basler Exp $ --%>
 
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@page import="com.sun.javaee.blueprints.petstore.model.CatalogFacade, com.sun.javaee.blueprints.petstore.model.Item, com.sun.javaee.blueprints.petstore.mapviewer.MapBean, com.sun.javaee.blueprints.components.ui.mapviewer.MapMarker"%>
+<%@page import="com.sun.javaee.blueprints.carstore.model.CatalogFacade, com.sun.javaee.blueprints.carstore.model.Item, com.sun.javaee.blueprints.carstore.mapviewer.MapBean, com.sun.javaee.blueprints.components.ui.mapviewer.MapMarker"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <%@taglib uri="http://java.sun.com/jsf/html" prefix="h" %>
 <%@taglib uri="http://java.sun.com/jsf/core" prefix="f" %>

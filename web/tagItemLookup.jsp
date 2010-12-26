@@ -3,7 +3,7 @@ $Id: tagItemLookup.jsp,v 1.4 2007/01/19 21:47:31 basler Exp $ --%>
 
 <%@page contentType="text/xml"%>
 <%@page pageEncoding="UTF-8"%>
-<%@page import="java.util.*, java.text.NumberFormat, com.sun.javaee.blueprints.petstore.model.CatalogFacade, com.sun.javaee.blueprints.petstore.model.Item, com.sun.javaee.blueprints.petstore.model.Tag"%>
+<%@page import="java.util.*, java.text.NumberFormat, com.sun.javaee.blueprints.carstore.model.CatalogFacade, com.sun.javaee.blueprints.carstore.model.Item, com.sun.javaee.blueprints.carstore.model.Tag"%>
 
 <%
     String sxTag=request.getParameter("tag");
