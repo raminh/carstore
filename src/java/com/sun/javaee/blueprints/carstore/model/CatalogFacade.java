@@ -146,7 +146,7 @@ public class CatalogFacade implements ServletContextListener {
 
         System.out.println("carType>>>>>>"+carType);
 
-        String pattern = "'"+carType.toUpperCase()+"%'";
+        String pattern = "'"+carType+"%'";
         //make Java Persistence query
         //Query query = em.createNamedQuery("Item.getItemsPerProductCategory");
         Query query = em.createQuery("SELECT i FROM Item i WHERE i.name LIKE "+pattern+" AND i.disabled = 0");
