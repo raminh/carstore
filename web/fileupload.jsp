@@ -205,14 +205,12 @@ div.pane {
                         <h:inputText size="20" id="street1"></h:inputText>
                         <h:outputText value="*City"/>
                         <ui:autoComplete   size="20"  maxlength="10" id="cityField"
-                        completionMethod="#{AutocompleteBean.completeCity}"
-                        value="#{AddressBean.city}" required="true"
+                        required="true"
                         ondisplay="function(item) { return extractCity(item); }"
                         onchoose="function(item) { return chooseCity(item); }" />
                         <h:outputText value="*State"/>
                         <ui:autoComplete style="position:relative;" size="20"   maxlength="10" id="stateField"
-                        completionMethod="#{AutocompleteBean.completeState}"
-                        value="#{AddressBean.state}" required="true" />
+                         required="true" />
                         <h:outputText value="*Zip Code"/>
                         <h:inputText size="5" id="zipField" value="#{AddressBean.zip}" required="true" />
 
