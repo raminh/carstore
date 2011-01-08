@@ -39,7 +39,7 @@ $Id: mapAll.jsp,v 1.14 2006/12/06 22:44:37 basler Exp $ --%>
                         <th align="right">Center Point Address:</th>
                         <td>
                             <h:inputText id="centerAddress" value="#{MapBean.centerAddress}" size="70"/>
-                            <br/><small><i>For example: 4140 Network Circle, Santa Clara, CA, 95054</i></small>
+                            <br/><small><i>For example: Galgamarken, Karlskrona,Sweden,37030</i></small>
                         </td>
                     </tr>
                     <tr>

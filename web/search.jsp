@@ -265,7 +265,7 @@ if(searchBean != null) {
                                             <th align="right">Center Point Address:</th>
                                             <td>
                                                 <h:inputText id="centerAddress" value="#{MapBean.centerAddress}" size="50"/>
-                                                <br/><small><i>For example: 4140 Network Circle, Santa Clara, CA, 95054</i></small>
+                                                <br/><small><i>For example: Galgamarken, Karlskrona,Sweden,37030 </i></small>
                                             </td>
                                         </tr>
                                         <tr>
