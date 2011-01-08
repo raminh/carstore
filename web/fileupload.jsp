@@ -79,7 +79,7 @@ $Id: fileupload.jsp,v 1.57 2007/03/08 21:58:48 inder Exp $ --%>
 
             // START: check validation
             if(dojo.byId("TestFileuploadForm:name").value == "") {
-                valMess += "Error: Pet Name is required.\n";
+                valMess += "Error: Car Name is required.\n";
             }
             
             // make sure there isn't a script/link tag in the description
