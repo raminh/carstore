@@ -33,7 +33,7 @@ CREATE TABLE SellerContactInfo (
  contactinfoid VARCHAR(10) NOT NULL,
  lastname VARCHAR(24) NOT NULL,
  firstname VARCHAR(24) NOT NULL,
- email VARCHAR(24) NOT NULL,
+ email VARCHAR(40) NOT NULL,
  primary key (contactinfoid)
 );
 
