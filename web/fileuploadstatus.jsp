@@ -121,9 +121,7 @@ $Id: fileuploadstatus.jsp,v 1.8 2006/05/05 21:05:47 yutayoshida Exp $ --%>
       <img name="catalog" id="catalog" src="../images/catalog-thumb-g.jpg" alt="catalog" width="105" height="60" border="0">
     </a>
             </td>
-            <td><a href="http://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.servletContext.contextPath}/index.jsp" onmouseover="highlightButton(3)" onmouseout="darkenButton(3)">
-      <img name="home" id="home" src="../images/index-thumb-g.jpg" alt="index" width="105" height="60" border="0">
-    </a>
+            <td>
             </td>
             </tr>
         </table>
