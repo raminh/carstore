@@ -251,8 +251,7 @@ div.pane {
                         <h:outputText value="*Image File"/>                 
                         <input type="file" size="20" name="fileToUpload" id="fileToUploadId"/>
 
-                        <h:outputText value="Custom Tag Keywords (separated by spaces)"/>
-                        <h:inputText size="20" id="tags"></h:inputText>
+                       
                     </h:panelGrid>
                     <br/><span class="button" onClick="switchPanes('pane1', 'pane2');">Next &gt;&gt;</span>
                 </div>
