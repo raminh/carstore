@@ -28,7 +28,7 @@ $Id: news.jsp,v 1.2 2006/12/14 01:04:50 yutayoshida Exp $ --%>
     </head>
     <script type="text/javascript">
         var news = new bpuinews.RSS();
-        dojo.addOnLoad(function(){news.getRssInJson('${pageContext.request.contextPath}/faces/dynamic/bpui_rssfeedhandler/getRssfeed', 'https://blueprints.dev.java.net/servlets/ProjectRSS?type=news');});
+        dojo.addOnLoad(function(){news.getRssInJson('${pageContext.request.contextPath}/faces/dynamic/bpui_rssfeedhandler/getRssfeed', 'http://www.bmw.tv/core-services/rs/rss/feed/get/4/US');});
     </script>
     <body>
         <jsp:include page="banner.jsp" />

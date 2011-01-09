@@ -18,13 +18,13 @@ $Id: rss.jsp,v 1.2 2006/05/03 22:00:34 inder Exp $ --%>
     <h1>RSS test</h1>
     <f:view>
     <ui:rssreader>
-        <ui:rsscategory title="JavaEE 5">
-            <ui:rssfeed title="BluePrints" url="https://blueprints.dev.java.net/servlets/ProjectRSS?type=news"></ui:rssfeed>
-            <ui:rssfeed title="GlassFish" url="http://blogs.sun.com/roller/rss/theaquarium"></ui:rssfeed>
+        <ui:rsscategory title="Car Store">
+            <ui:rssfeed title="BMW" url="http://www.bmw.tv/core-services/rs/rss/feed/get/4/US"></ui:rssfeed>
+            <ui:rssfeed title="BMW0" url="http://www.bmw.tv/core-services/rs/rss/feed/get/4/US"></ui:rssfeed>
         </ui:rsscategory>
-        <ui:rsscategory title="Yahoo!">
-            <ui:rssfeed title="World" url="http://rss.news.yahoo.com/rss/world"></ui:rssfeed>
-            <ui:rssfeed title="US" url="http://rss.news.yahoo.com/rss/us"></ui:rssfeed>
+        <ui:rsscategory title="BMW1">
+            <ui:rssfeed title="BMW2" url="http://www.bmw.tv/core-services/rs/rss/feed/get/4/US"></ui:rssfeed>
+            <ui:rssfeed title="BMW3" url="http://www.bmw.tv/core-services/rs/rss/feed/get/4/US"></ui:rssfeed>
         </ui:rsscategory>
     </ui:rssreader>
             
